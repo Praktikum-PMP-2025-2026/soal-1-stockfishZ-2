@@ -5,12 +5,12 @@
 #include <stdio.h>
 
 int main(){
-    int a;
+    int N;
     
-    scanf("%d", &a);
+    scanf("%d", &N);
     printf("\n");
 
-    for (int i = 1; i < a+1; i++){
+    for (int i = 1; i < N+1; i++){
         if (i % 2 == 0 && i % 3 == 0){
             printf("BIRU\n");
         }else if (i % 3 == 0){
