@@ -4,6 +4,7 @@
 
 #include <stdio.h>
 
+
 int main(){
     int N;
     
@@ -17,8 +18,18 @@ int main(){
             printf("MERAH\n");
         }else if (i % 2 == 0){
             printf("KUNING\n");
-        }else if (i >= 10 && i % 2 == 0){
-            printf("HIJAU\n");
+        }else if (i >= 10){
+            int i_temp, a_temp, b_temp;
+            i_temp = i;
+            a_temp = i % 10;
+            i_temp -= i % 10;
+            b_temp = i_temp /10;
+
+            if((a_temp + b_temp) % 2 == 0){
+                printf("HIJAU\n");
+            }else{
+                printf("%d\n", i);
+            }
         }else{
             printf("%d\n", i);
         }
