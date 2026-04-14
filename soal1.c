@@ -9,7 +9,6 @@ int main(){
     int N;
     
     scanf("%d", &N);
-    printf("\n");
 
     for (int i = 1; i < N+1; i++){
         if (i % 2 == 0 && i % 3 == 0){
